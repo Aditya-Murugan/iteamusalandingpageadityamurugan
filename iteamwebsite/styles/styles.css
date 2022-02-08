@@ -1,3 +1,4 @@
+/* Navigaiton CSS */
 nav {
     background-color: #17E6DF;
     height: 50px;
@@ -9,9 +10,43 @@ nav > .buttons{
 nav > .buttons > a{
     margin-top: 15px;
 }
+/* Header CSS */
 header{
     display: flex;
     align-items: baseline;
 
 
+}
+header > .logo{
+    display: flex;
+    align-self: flex-start;
+}
+header > .icons{
+    display: flex;
+    align-self: flex-end;
+}
+/* About Css */
+#about{
+    background-color: red;
+    height: 200px;
+}
+/* Projects CSS */
+#projects{
+    background-color: blue;
+    height: 200px;
+}
+/* Blog Css */
+#certification{
+    
+    height: 200px;
+}
+/* Contact css */
+#contact{
+    background-color: #17E6DF;
+    height: 200px;
+}
+/* Footer css */
+footer {
+    background-color: gray;
+    height: 150px;
 }
