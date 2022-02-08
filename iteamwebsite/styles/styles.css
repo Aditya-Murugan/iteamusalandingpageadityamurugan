@@ -1,0 +1,17 @@
+nav {
+    background-color: #17E6DF;
+    height: 50px;
+}
+nav > .buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav > .buttons > a{
+    margin-top: 15px;
+}
+header{
+    display: flex;
+    align-items: baseline;
+
+
+}
