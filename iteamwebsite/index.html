@@ -36,7 +36,7 @@
         </div>
     </nav>
     <section>
-        <video src="videos/3d-earth-technology-business-and-communications-ba-2021-08-29-14-04-19-utc.mp4"width=100% controls loop>
+        <video src="videos/3d-earth-technology-business-and-communications-ba-2021-08-29-14-04-19-utc.mp4"width=100% autoplay muted loop>
             <source src="movie.mp4" type="video/mp4">
         </video>
     </section>
@@ -59,6 +59,23 @@
     <!-- For the Contact part add a big  -->
     <article id="contact">
         <h1>Contact</h1>
+        <div class="form">
+            <div class="form-group">
+                <input type="text" id="fullName" placeholder="Your name">
+                <label for="fullName">Your Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Your email">
+                <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+                <textarea name="message" id="message" placeholder="Your message"></textarea>
+                <label for="message">Message</label>
+            </div>
+            <div class="centered-btn">
+                <button type="submit" class="btn">Send</button>
+            </div>
+        </div>
     </article>
     <footer>
         <div class="logo">
@@ -71,6 +88,7 @@
             <i class="fab fa-instagram-square"></i>
             <i class="fab fa-linkedin"></i>
         </div>
+        <p>&copy; 2022 Aditya Murugan &#124; All rights reserved</p>
     </footer>
 </body>
 </html>
