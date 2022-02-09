@@ -1,3 +1,49 @@
+
+/* Header CSS */
+header{
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+header > .logo{
+    display: flex;
+    justify-content: center;
+}
+header >.logo > img{
+    width: 100px;
+    transition: .5s;
+}
+header >.logo > img:hover{
+    width: 150px;
+    transition: .5s;
+}
+header > h1{
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+}
+header > h1:hover{
+    font-size: 3em;
+    transition: .5s;
+}
+header > .icons{
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    
+}
+header > .icons > i:hover{
+    color: #17E6DF;
+    transition: .5s;
+    font-size: 3em;
+}
+header > .icons > i{
+    padding-right: 10px;
+    padding-left: 10px;
+  
+}
 /* Navigaiton CSS */
 nav {
     background-color: #17E6DF;
@@ -9,22 +55,18 @@ nav > .buttons{
 }
 nav > .buttons > a{
     margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: .5s;
 }
-/* Header CSS */
-header{
-    display: flex;
-    align-items: baseline;
+nav > .buttons > a:hover{
+    color: gold;
+    transition: .5s;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
 
-
-}
-header > .logo{
-    display: flex;
-    align-self: flex-start;
-}
-header > .icons{
-    display: flex;
-    align-self: flex-end;
-}
 /* About Css */
 #about{
     background-color: red;
@@ -35,10 +77,29 @@ header > .icons{
     background-color: blue;
     height: 200px;
 }
-/* Blog Css */
+/* Certifications Css */
 #certification{
+    height: 400px;
+}
+#certification > h1{
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+#certification > .certi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    height: 200px;
+}
+#certification > .certi> img{
+    padding-right: 10%;
+    transition: .5s;
+    width: 150px;
+}
+#certification > .certi> img:hover{
+    width: 200px;
+    transition: .5s;
 }
 /* Contact css */
 #contact{
@@ -49,4 +110,9 @@ header > .icons{
 footer {
     background-color: gray;
     height: 150px;
+}
+
+/* icons  */
+.icons > i{
+    font-size: 2.5em;
 }
