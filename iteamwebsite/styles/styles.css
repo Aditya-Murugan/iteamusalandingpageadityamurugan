@@ -1,5 +1,9 @@
 
 /* Header CSS */
+body{
+    margin: 0;
+    background-image: url("../images/y-so-serious-white.png");
+}
 header{
     
     height: 150px;
@@ -64,7 +68,6 @@ nav {
     position: fixed;   
     width: 100%;
     height: 50px;
-    margin-top: -10px;
 }
 nav > .buttons{
     display: flex;
@@ -81,11 +84,11 @@ nav > .buttons > img{
     margin-top: 3px;
     transition: .5s
 }
-nav > .buttons > img:hover{
+/* nav > .buttons > img:hover{
     background-color: white;
     transition: .5s;
     width: 65px;
-}
+} */
 nav > .buttons > a:hover{
     color: white;
     transition: .5s;
@@ -95,25 +98,62 @@ nav > .buttons > a:hover{
 
 /* About Css */
 #about{
-background-color: #11122b;
-    height: 600px;
+    height: 80%;
+}
+#about > .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    display: flex;
+
 }
 #about > h1{
     font-size: 2.5em;
     display: flex;
     justify-content: center;
     margin-bottom: -10px;
+    
+}
+#about > .content > .text > h3{
+    font-size: 2em;
+    text-align: center;
+    margin-left: 70px;
+}
+#about > .content > .text > p{
+    font-size: 2em;
+    text-align: center;
+    margin-left: 100px;
+
+}
+#about >.content >img{
+    border-radius: 100%;
+    margin-left: 70px;
+    box-shadow: 10px 10px 10px gray;
 }
 /* Projects CSS */
 #projects{
-    height: 400px;
-    background-color: red;
+    height: 100%;
 }
 #projects > h1{
     font-size: 2.5em;
     display: flex;
     justify-content: center;
 }
+#projects > .images{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#projects > .images > img{
+    margin: 10px;
+    transition: .5s;
+}
+#projects > .images > img:hover{
+    margin: 10px;
+    box-shadow: 10px 10px 10px gray;
+    transition: .5s;
+}
+
 /* Certifications Css */
 #certification{
     height: 400px;
@@ -123,20 +163,27 @@ background-color: #11122b;
     display: flex;
     justify-content: center;
 }
-#certification > .certi{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+#certification > .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    margin-left: 10%;
 }
-#certification > .certi> img{
+#certification > .grid>  img{
     padding-right: 10%;
     transition: .5s;
     width: 150px;
 }
-#certification > .certi> img:hover{
-    width: 200px;
+#certification > .grid> img:hover{
+    width: 170px;
+    /* box-shadow: 10px 10px 10px gray; */
     transition: .5s;
+}
+
+#certification > .grid > p{
+    font-size: 30px;
+    margin-left: 0%;
 }
 /* Contact css */
 #contact{
@@ -245,7 +292,7 @@ footer > p{
 /* button */
 .btn {
     background-color: #17E6DF;
-    color: #11122b;
+    color: black;
     font-size: 1.25em;
     padding: 10px 25px;
     border: 1px solid #17E6DF;
@@ -255,7 +302,7 @@ footer > p{
 }
 
 .btn:active {
-    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 3px gray;
 }
 
 .centered-btn-wrapper {
