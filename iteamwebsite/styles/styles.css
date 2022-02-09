@@ -1,37 +1,50 @@
 
 /* Header CSS */
 header{
-    height: 250px;
+    
+    height: 150px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    /* background-color: #4C5261; */
+    background-color: black;
 }
 
-header > .logo{
+/* header > .logo{
     display: flex;
     justify-content: center;
 }
 header >.logo > img{
     width: 100px;
     transition: .5s;
+    margin-top: 50px;
 }
 header >.logo > img:hover{
     width: 150px;
     transition: .5s;
-}
+} */
 header > h1{
     display: flex;
     justify-content: center;
     transition: .5s;
+    margin-top: 60px;
+    font-size: 3em;
+    color: white;
+    -webkit-animation: color-change 2s infinite;
+}
+@-webkit-keyframes color-change {
+    0% {color:white;}
+    50% {color: black;}
+    100% {color: white;}
 }
 header > h1:hover{
-    font-size: 3em;
+    color: white;
     transition: .5s;
 }
-header > .icons{
+/* header > .icons{
     display: flex;
     justify-content: center;
-    margin-top: -10px;
+    margin-top: 10px;
     
 }
 header > .icons > i:hover{
@@ -43,11 +56,15 @@ header > .icons > i{
     padding-right: 10px;
     padding-left: 10px;
   
-}
+} */
 /* Navigaiton CSS */
 nav {
     background-color: #17E6DF;
     height: 60px;
+    position: fixed;   
+    width: 100%;
+    height: 50px;
+    margin-top: -10px;
 }
 nav > .buttons{
     display: flex;
@@ -60,32 +77,42 @@ nav > .buttons > a{
     font-size: 20px;
     transition: .5s;
 }
+nav > .buttons > img{
+    margin-top: 3px;
+    transition: .5s
+}
+nav > .buttons > img:hover{
+    background-color: white;
+    transition: .5s;
+    width: 65px;
+}
 nav > .buttons > a:hover{
-    color: gold;
+    color: white;
     transition: .5s;
     letter-spacing: 2px;
-    font-size: 25px;
+    /* font-size: 25px; */
 }
 
 /* About Css */
 #about{
-    height: 400px;
+background-color: #11122b;
+    height: 600px;
 }
 #about > h1{
     font-size: 2.5em;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-bottom: -10px;
 }
 /* Projects CSS */
 #projects{
     height: 400px;
+    background-color: red;
 }
 #projects > h1{
     font-size: 2.5em;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 /* Certifications Css */
 #certification{
@@ -123,7 +150,7 @@ nav > .buttons > a:hover{
 }
 /* Footer css */
 footer {
-    background-color: gray;
+    background-color: #4C5261;
     height: 150px;
     display: grid;
     grid-template-columns: 1fr;
