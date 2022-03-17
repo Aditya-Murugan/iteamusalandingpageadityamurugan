@@ -3,6 +3,8 @@
 body{
     margin: 0;
     background-image: url("../images/y-so-serious-white.png");
+    font-family: 'Bebas Neue', cursive;
+   
 }
 header{
     
@@ -14,19 +16,7 @@ header{
     background-color: black;
 }
 
-/* header > .logo{
-    display: flex;
-    justify-content: center;
-}
-header >.logo > img{
-    width: 100px;
-    transition: .5s;
-    margin-top: 50px;
-}
-header >.logo > img:hover{
-    width: 150px;
-    transition: .5s;
-} */
+
 header > h1{
     display: flex;
     justify-content: center;
@@ -34,41 +24,24 @@ header > h1{
     margin-top: 60px;
     font-size: 3em;
     color: white;
-    -webkit-animation: color-change 2s infinite;
+    /* -webkit-animation: color-change 2s infinite; */
 }
-@-webkit-keyframes color-change {
-    0% {color:white;}
-    50% {color: black;}
-    100% {color: white;}
-}
+
 header > h1:hover{
     color: white;
     transition: .5s;
 }
-/* header > .icons{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    
-}
-header > .icons > i:hover{
-    color: #17E6DF;
-    transition: .5s;
-    font-size: 3em;
-}
-header > .icons > i{
-    padding-right: 10px;
-    padding-left: 10px;
-  
-} */
+
 /* Navigaiton CSS */
 nav {
+    top: 0;
+    overflow: hidden;
     background-color: #BDDDEB;
     height: 60px;
     position: fixed;   
     width: 100%;
     height: 50px;
-    margin-top: -20px;
+    
 }
 nav > .buttons{
     display: flex;
@@ -98,10 +71,22 @@ nav > .buttons > a:hover{
 }
 
 /* Section */
-section > h1{
-    
+section {
+    margin-top: 60px;
 }
-
+section h1{
+    font-size: 3em;
+    text-align: center;
+}
+section h1{
+    margin-bottom: -70px;
+    padding-top: 30px;
+}
+section p {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
 
 /* About Css */
 #about{
@@ -118,7 +103,7 @@ section > h1{
     font-size: 2.5em;
     display: flex;
     justify-content: center;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
     
 }
 #about > .content > .text > h3{
@@ -298,11 +283,11 @@ footer > p{
 
 /* button */
 .btn {
-    background-color: #17E6DF;
+    background-color: #BDDDEB;
     color: black;
     font-size: 1.25em;
     padding: 10px 25px;
-    border: 1px solid #17E6DF;
+    border: 1px solid #BDDDEB;
     border-radius: 2px;
     
     transition: 0.3s;
