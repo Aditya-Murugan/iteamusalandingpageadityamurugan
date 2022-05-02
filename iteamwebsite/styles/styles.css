@@ -82,22 +82,24 @@ section h1{
     margin-bottom: -70px;
     padding-top: 30px;
 }
-section p {
+section p .text{
     margin-top: 100px;
     text-align: center;
     font-size: 30px;
 }
-
+section p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
 /* About Css */
 #about{
     height: 80%;
 }
 #about > .content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     display: flex;
-
+    align-items: center;
+    justify-content: space-between;
 }
 #about > h1{
     font-size: 2.5em;
@@ -117,10 +119,19 @@ section p {
     margin-left: 100px;
 
 }
+#about > .content > .textleft > p{
+    font-size: 2em;
+    text-align: left;
+    
+  
+
+}
 #about >.content >img{
     border-radius: 100%;
-   margin-left: 30%;
     box-shadow: 10px 10px 10px gray;
+    display: flex;
+    width: 600px;
+    align-self: center;
 }
 /* Projects CSS */
 #projects{
@@ -153,21 +164,38 @@ section p {
 #certification > h1{
     font-size: 2.5em;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 #certification > .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-self: center;
-    margin-left: 10%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin: 10px;
 }
+#certification > .grid2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    }
 #certification > .grid>  img{
     padding-right: 10%;
     transition: .5s;
     width: 150px;
+    margin: 10px 10px 10px 30px;
+}
+#certification > .grid2 >  img{
+    padding-right: 10%;
+    transition: .5s;
+    width: 150px;
+    margin: 10px 10px 10px 30px;
 }
 #certification > .grid> img:hover{
+    width: 170px;
+    /* box-shadow: 10px 10px 10px gray; */
+    transition: .5s;
+}
+#certification > .grid2> img:hover{
     width: 170px;
     /* box-shadow: 10px 10px 10px gray; */
     transition: .5s;
@@ -180,6 +208,7 @@ section p {
 /* Contact css */
 #contact{
     height: 800px;
+    margin-top: 150px;
 }
 #contact > h1{
     font-size: 2.5em;
@@ -213,7 +242,7 @@ footer>.icons>i{
     transition: .3s;
 }
 footer>.icons>i:hover{
-    color: #17E6DF;
+    color: white;
     transition: .3s;
 }
 footer > p{
@@ -293,7 +322,7 @@ footer > p{
     transition: 0.3s;
 }
 
-.btn:active {
+.btn:hover {
     box-shadow: 5px 5px 3px gray;
 }
 
