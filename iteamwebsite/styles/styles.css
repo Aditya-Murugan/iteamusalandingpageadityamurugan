@@ -1,10 +1,13 @@
 
 /* Header CSS */
+*{
+    overflow: none  ;
+}
 body{
     margin: 0;
     background-image: url("../images/y-so-serious-white.png");
     font-family: 'Bebas Neue', cursive;
-   
+    overflow: none;
 }
 header{
     
@@ -92,6 +95,10 @@ section p {
     text-align: center;
     font-size: 30px;
 }
+section .title{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 /* About Css */
 #about{
     height: 80%;
@@ -136,6 +143,8 @@ section p {
 /* Projects CSS */
 #projects{
     height: 100%;
+
+    margin: 0 2.5%;
 }
 #projects > h1{
     font-size: 2.5em;
@@ -149,9 +158,32 @@ section p {
 }
 #projects > .images > img{
     margin: 10px;
+    transition: .5s;    
+}
+#projects > .images > .pet:hover{
+    margin: 10px;
+    box-shadow: 10px 10px 10px gray;
     transition: .5s;
 }
-#projects > .images > img:hover{
+#projects > .images > .devcamp:hover{
+    margin: 10px;
+    box-shadow: 10px 10px 10px gray;
+    transition: .5s;
+}
+#projects > .images > .codepen:hover{
+    margin: 10px;
+    box-shadow: 10px 10px 10px gray;
+    transition: .5s;
+}
+#projects > .images2 {
+    display: flex;
+    justify-content: space-around;
+}
+#projects > .images2> img {
+    transition: .5s;
+    margin: 10px;
+}
+#projects > .images2 > img:hover{
     margin: 10px;
     box-shadow: 10px 10px 10px gray;
     transition: .5s;
@@ -218,7 +250,7 @@ margin: 10px;
 }
 /* Footer css */
 footer {
-    background-color: #4C5261;
+    background-color: #BDDDEB;
     height: 150px;
     display: grid;
     grid-template-columns: 1fr;
@@ -251,13 +283,27 @@ footer > p{
     margin-top: -7px;
 }
 
+footer>.icons>a>i{
+    font-size: 2em;
+    padding: 0 10px 10px 0;
+    transition: .3s;
+    color: black;
+}
+footer>.icons>a>i:hover{
+    color: white;
+    transition: .3s;
+}
+
+
 
 
 /* icons  */
 .icons > i{
     font-size: 2.5em;
 }
-
+.icons > a > i{
+    font-size: 2.5em;
+}
 /* form */
 .form > .form-group{
     margin-top: 30px;
@@ -277,7 +323,7 @@ footer > p{
     color: inherit;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    border: none;
+    border: 3px solid #11122b;
     border-bottom: 3px solid #11122b;
     width: 50%;
     display: block;
@@ -308,6 +354,7 @@ footer > p{
     transition: all 0.3s;
     color: #17E6DF;
     visibility: hidden;
+    border: 3px solid #11122b;
 }
 
 /* button */
