@@ -1,7 +1,7 @@
 
 /* Header CSS */
-*{
-    overflow: none  ;
+html {
+	scroll-behavior: smooth;
 }
 body{
     margin: 0;
@@ -90,6 +90,9 @@ section p .text{
     text-align: center;
     font-size: 30px;
 }
+section .text{
+    margin: 100px 20px 0px 20px; 
+}
 section p {
     margin-top: 50px;
     text-align: center;
@@ -171,6 +174,11 @@ section .title{
     transition: .5s;
 }
 #projects > .images > .codepen:hover{
+    margin: 10px;
+    box-shadow: 10px 10px 10px gray;
+    transition: .5s;
+}
+#projects > .images > .utah:hover{
     margin: 10px;
     box-shadow: 10px 10px 10px gray;
     transition: .5s;
