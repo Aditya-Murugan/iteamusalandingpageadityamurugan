@@ -159,7 +159,17 @@ section .title{
     justify-content: space-evenly;
 
 }
+
+#projects > .imagesmiddle{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 #projects > .images > img{
+    margin: 10px;
+    transition: .5s;    
+}
+#projects > .imagesmiddle > img{
     margin: 10px;
     transition: .5s;    
 }
@@ -173,12 +183,12 @@ section .title{
     box-shadow: 10px 10px 10px gray;
     transition: .5s;
 }
-#projects > .images > .codepen:hover{
+#projects > .imagesmiddle > .codepen:hover{
     margin: 10px;
     box-shadow: 10px 10px 10px gray;
     transition: .5s;
 }
-#projects > .images > .utah:hover{
+#projects > .imagesmiddle > .utah:hover{
     margin: 10px;
     box-shadow: 10px 10px 10px gray;
     transition: .5s;
@@ -197,49 +207,94 @@ section .title{
     transition: .5s;
 }
 
+
+#projects > img{
+    
+    transition: .5s;
+}
+#projects > img:hover{
+    transition: .5;
+    box-shadow: 10px 10px 10px gray;
+}
 /* Certifications Css */
+
+
+
 #certification{
-    height: 400px;
+    height: 700px;
 }
 #certification > h1{
     font-size: 2.5em;
     display: flex;
     justify-content: space-around;
 }
+
+
+
+
 #certification > .grid {
 display: flex;
 align-items: center;
-justify-content: space-around;
-margin: 10px;
+justify-content: space-evenly;
+width: 100%;
+margin-top: 10px;
 }
 #certification > .grid2 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 10px;
-    }
-#certification > .grid>  img{
-    padding-right: 10%;
+    width: 100%;
+    margin-top: 10px;
+}
+#certification > .grid3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   width: 100%;
+   margin-top: 10px;
+}
+
+
+#certification > .grid> a >  img{
+
     transition: .5s;
     width: 150px;
     margin: 10px 10px 10px 30px;
 }
-#certification > .grid2 >  img{
-    padding-right: 10%;
+#certification > .grid2 >  a > img{
+
     transition: .5s;
     width: 150px;
     margin: 10px 10px 10px 30px;
 }
-#certification > .grid> img:hover{
+#certification > .grid3 > a >  img{
+    transition: .5s;
+    width: 150px;
+    margin: 10px 10px 10px 30px;
+}
+
+
+
+
+#certification > .grid> a >img:hover{
     width: 170px;
     /* box-shadow: 10px 10px 10px gray; */
     transition: .5s;
 }
-#certification > .grid2> img:hover{
+#certification > .grid2> a > img:hover{
     width: 170px;
     /* box-shadow: 10px 10px 10px gray; */
     transition: .5s;
 }
+#certification > .grid3> a > img:hover{
+    width: 170px;
+    /* box-shadow: 10px 10px 10px gray; */
+    transition: .5s;
+}
+
+
+
+
 
 #certification > .grid > p{
     font-size: 30px;
