@@ -160,16 +160,17 @@ section .title{
 
 }
 
-#projects > .imagesmiddle{
+#projects > .imagemiddle{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 30px;
 }
 #projects > .images > img{
     margin: 10px;
     transition: .5s;    
 }
-#projects > .imagesmiddle > img{
+#projects > .imagemiddle > img{
     margin: 10px;
     transition: .5s;    
 }
@@ -183,12 +184,12 @@ section .title{
     box-shadow: 10px 10px 10px gray;
     transition: .5s;
 }
-#projects > .imagesmiddle > .codepen:hover{
+#projects > .imagemiddle > .codepen:hover{
     margin: 10px;
     box-shadow: 10px 10px 10px gray;
     transition: .5s;
 }
-#projects > .imagesmiddle > .utah:hover{
+#projects > .imagemiddle > .utah:hover{
     margin: 10px;
     box-shadow: 10px 10px 10px gray;
     transition: .5s;
@@ -207,12 +208,16 @@ section .title{
     transition: .5s;
 }
 
+#projects > .last{
+    display: flex;
+    justify-content: center;
+}
 
-#projects > img{
+#projects > .last >img{
     
     transition: .5s;
 }
-#projects > img:hover{
+#projects > .last > img:hover{
     transition: .5;
     box-shadow: 10px 10px 10px gray;
 }
