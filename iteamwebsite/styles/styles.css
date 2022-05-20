@@ -109,7 +109,7 @@ section .title{
 #about > .content{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 #about > h1{
     font-size: 2.5em;
@@ -140,9 +140,10 @@ section .title{
     border-radius: 100%;
     box-shadow: 10px 10px 10px gray;
     display: flex;
-    width: 600px;
-    align-self: center;
+    width: 40%;
+    
 }
+
 /* Projects CSS */
 #projects{
     height: 100%;
@@ -169,6 +170,8 @@ section .title{
 #projects > .images > img{
     margin: 10px;
     transition: .5s;    
+    width: 47%;
+    
 }
 #projects > .imagemiddle > img{
     margin: 10px;
@@ -194,6 +197,11 @@ section .title{
     box-shadow: 10px 10px 10px gray;
     transition: .5s;
 }
+#projects > .imagemiddle > .kids:hover{
+    margin: 10px;
+    box-shadow: 10px 10px 10px gray;
+    transition: .5s;
+}
 #projects > .images2 {
     display: flex;
     justify-content: space-around;
@@ -201,6 +209,13 @@ section .title{
 #projects > .images2> img {
     transition: .5s;
     margin: 10px;
+}
+
+#projects > .images2 > .vine{
+    width: 45%;
+}
+#projects > .images2 > .elk{
+    width: 40%;
 }
 #projects > .images2 > img:hover{
     margin: 10px;
@@ -444,4 +459,69 @@ footer>.icons>a>i:hover{
 .centered-btn-wrapper {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+    #about > .content > img{
+        width: 70%;
+    }
+  
+    #projects > .images{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #projects > .images > img{
+      width: 90%;
+  }
+
+  #projects > .imagemiddle{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #projects > .imagemiddle > img{
+      width: 90%;
+  }
+
+  #projects > .last > img{
+      width: 100%;
+  }
+
+  #projects > .images2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+  #projects > .images2 > .vine{
+    width: 95%;
+  }
+  #projects > .images2 > .elk{
+    width: 95%;
+  }
+
+  #certification{
+      height: auto;
+  }
+
+  #certification > .grid > a > img{
+      width: 50%;
+  }
+  #certification > .grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#certification > .grid > a > img:hover{
+    width: 65%;
+}
 }
