@@ -438,7 +438,7 @@ footer>.icons>a>i:hover{
     color: #17E6DF;
     visibility: hidden;
     border: 3px solid #11122b;
-}
+    }
 
 /* button */
 .btn {
@@ -511,9 +511,6 @@ footer>.icons>a>i:hover{
       height: auto;
   }
 
-  #certification > .grid > a > img{
-      width: 50%;
-  }
   #certification > .grid{
     display: flex;
     flex-direction: column;
@@ -521,7 +518,24 @@ footer>.icons>a>i:hover{
     align-items: center;
 
 }
-#certification > .grid > a > img:hover{
-    width: 65%;
+
+
+#certification > .grid2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
+
+#certification > .grid3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
 }
