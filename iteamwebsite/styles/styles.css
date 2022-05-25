@@ -448,12 +448,16 @@ footer>.icons>a>i:hover{
     padding: 10px 25px;
     border: 1px solid #BDDDEB;
     border-radius: 2px;
-    
+    font-family: 'Bebas Neue', cursive;
     transition: 0.3s;
 }
 
 .btn:hover {
     box-shadow: 5px 5px 3px gray;
+}
+
+.btn:active{
+    box-shadow: 5px 5px 3px white;
 }
 
 .centered-btn-wrapper {
@@ -536,6 +540,8 @@ footer>.icons>a>i:hover{
 
 }
 
-
+footer {
+    height:200px;
+}
 
 }
